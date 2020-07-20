@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f2d115e254.js" crossorigin="anonymous"></script>
+
+<style>
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 8rem 0;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #dae1eb;
+}
+
+input,
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+i {
+  color: #b6bbc5;
+}
+
+.container-center {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.content {
+   width: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content:not(:first-child) {
+  margin-top: 8rem;
+}
+
+.box-icon {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  box-shadow: 
+    1rem 1rem 2rem rgba(0, 0, 0, .1),
+    -1rem -1rem 2rem rgba(255, 255, 255, .5);
+}
+        
+.box-icon:hover {
+  box-shadow: 
+    inset 1rem 1rem 2rem rgba(0, 0, 0, .1),
+    inset -1rem -1rem 2rem rgba(255, 255, 255, .5);
+}
+        
+.box-icon:active {
+  box-shadow: none;
+}
+
+.box-icon > i {
+  font-size: 3.6rem;
+}
+
+.search {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 
+    1rem 1rem 2rem rgba(0, 0, 0, .1),
+    -1rem -1rem 2rem rgba(255, 255, 255, .5);
+}
+
+.search__input {
+  flex-grow: 1;
+  height: 4rem;
+  font-size: 2.4rem;
+  color: #b6bbc5;
+  letter-spacing: 0.2rem;
+}
+
+.search__input::-webkit-input-placeholder {
+  color: #b6bbc5;
+  letter-spacing: 0.2rem;
+}
+
+.search__btn {
+  height: 4rem;
+  width: 4rem;
+  margin-left: 1.5rem;
+}
+
+.search__btn > i {
+  font-size: 2.6rem;
+}
+
+@media (max-width: 630px) {
+  .content {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 560px) { html { font-size: 50%; } }
+
+@media (max-width: 440px) { html { font-size: 40%; } }
+
+@media (max-width: 350px) { html { font-size: 35%; } }
+
+@media (max-width: 320px) { html { font-size: 30%; } }
+
+@media (max-width: 270px) { html { font-size: 25%; } }    
+</style>
+</head>
+<body>
+    <div class="content">
+        <form class="search">
+            <input class="search__input" placeholder="Search" type="text" name="" id="">
+            <button class="search__btn container-center" type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+    </div>
+    <div class="content">
+        <div class="box-icon container-center">
+            <i class="fab fa-facebook-f"></i>
+        </div>
+        <div class="box-icon container-center">
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div class="box-icon container-center">
+            <i class="fab fa-instagram"></i>
+        </div>
+        <div class="box-icon container-center">
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+    </div>
+</body>
+</html>

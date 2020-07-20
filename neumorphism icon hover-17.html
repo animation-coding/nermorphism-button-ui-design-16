@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body
+{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  background:#18191f;
+}
+p
+{
+  margin:0;
+  padding:0;
+  color: #fff;
+  font-family: 'Poppins',sans-serif;
+  font-size: 20px;
+}
+ul 
+{
+  position:relative;
+  display:flex;
+  margin: 10px 0;
+}
+ul li
+{
+  position:relative;
+  list-style:none;
+}
+ul li a
+{
+  display:block;
+  width:50px;
+  height:50px;
+  background:#18191f;
+  line-height:55px;
+  text-align:center;
+  margin: 0 10px;
+  border-radius: 15px;
+  box-shadow: -2px -2px 3px rgba(255,255,255,0.05), 3px 3px 3px rgba(0,0,0,0.2);
+  transition: all .2s ease-in-out;
+}
+ul li a .fab
+{
+  font-size:22px;
+  color: #555;
+}
+ul li a:hover .fab 
+{
+  color: #054982;
+  text-shadow: 0 0 15px #054982;
+}
+ul li:nth-child(2) a:hover .fab 
+{
+  color: #1c7dd5;
+  text-shadow: 0 0 15px #1c7dd5;
+}
+ul li:nth-child(3) a:hover .fab 
+{
+  color: #d43256;
+  text-shadow: 0 0 15px #d43256;
+}
+ul li:nth-child(4) a:hover .fab 
+{
+  color: #4cd137;
+  text-shadow: 0 0 15px #4cd137;
+}
+
+</style>
+
+</head>
+<body>
+    <p> Follow us on: </p>
+    <ul>
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+    </ul>    
+</body>
+</html>
